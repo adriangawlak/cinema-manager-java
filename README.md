@@ -1,11 +1,16 @@
 # Cinema Manager API  
-This is a simple REST API that allows users to view available seats, book tickets, and get statistical information about the cinema.  
-The application uses Spring, Spring MVC, Lombok, custom http responses.
+This is a simple REST API to handle Cinema operations. 
+Application allows users to view available seats, book tickets, and get statistical information about the cinema.  
+The application uses Spring, Spring MVC, Lombok, custom http responses (exceptions).  
+The system is build without a database and utilises mapping java objects to JSON.
+
+* Cinema room size is hard-coded to 9 rows with 9 seats to simplify application.
+* Seats at the front of the cinema are more expensive than those at the back.
 
 ## How to Use:
 - Clone the repository to your local machine.  
 - Run the application in your IDE using Maven.
-- Use Postman or other API client to interact with the API endpoints.  
+- Use Postman or other API client to interact with API endpoints.  
 - Application runs on a port 8080, so the address to access endpoints starts with:  
   `http://localhost:8080/`
 
